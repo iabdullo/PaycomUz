@@ -1,4 +1,4 @@
-from PayMe.models import StatusTransaction
+from .models import StatusTransaction
 
 
 ORDER_NOT_FOND = -31050

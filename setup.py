@@ -5,7 +5,7 @@ with open("README.md","r") as fh:
 
 setuptools.setup(
     name="PaycomUz",
-    version="1.0",
+    version="1.1",
     author="Sadullayev Bekhzod",
     author_email="begymrx@gmail.com",
     description="Django-RestFrameWork-PaycomUz",
