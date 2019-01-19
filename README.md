@@ -22,7 +22,7 @@ PAYCOM_SETTINGS = {
     "HOST":"https://checkout.test.paycom.uz/api",   #test host
     "ID":"qwertt12345",          #token
     "SECRET_KEY":"wertyu234567",  #password
-    "PATH_CLASS":"apps.order.views" #Paycom class ,
+    "PATH_CLASS":"apps.order.views", #Paycom class
     "ACCOUNTS":{
         "KEY1":"order_id",
         "KEY2":None #or "type"
