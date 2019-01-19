@@ -1,10 +1,10 @@
 from django.urls import path
-from .views import MerchantAPIVIew
+from .views import MerchantAPIView
 
 
 
 urlpatterns = [
 
-   path('paycom',MerchantAPIVIew.as_view())
+   path('paycom',MerchantAPIView.as_view())
 
 ]
