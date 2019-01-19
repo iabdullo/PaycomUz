@@ -39,9 +39,9 @@ token = 'paycom token'
 data = Subcribe(token=token,order_id=1,amount=5000.00,order_type='order').receipts_create()
 print(data)
 
->>> {'transaction_id': '5c42fb5ae3331dc358f3afef', 'paid': True, 'status': 'success', 'error': None}
+>>> {'_id': '5c42fb5ae3331dc358f3afef', 'paid': True, 'status': 'success', 'error': None}
 or
->>> {'transaction_id': 'error_response14', 'paid': False, 'status': 'failed', 'error': {'jsonrpc': '2.0', 'id': 123, 'error': {'code': -31700, 'id': 138, 'message': 'З
+>>> {'_id': 'error_response14', 'paid': False, 'status': 'failed', 'error': {'jsonrpc': '2.0', 'id': 123, 'error': {'code': -31700, 'id': 138, 'message': 'З
 аказ не найден', 'origin': 'merchants.checkPerformTransaction'}}}
 
 ````
