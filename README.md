@@ -33,7 +33,7 @@ PAYCOM_SETTINGS = {
 }
 
 ````
-# ⚙️To'lovlarni sozlash
+# ⚙️ To'lovlarni sozlash
 Tolovlarni amalga oshirish uchun sizda **Paycom** classi bolishi kerak u qanday yoziladi va nega kerak!
 **Paycom** classi buyurtma bor yoki yoligi yoki narxini tekwirib javob qaytarish uchun kerak!
 mana pasda qanday yozilishi xudi wunday yozilishi kerak **Paycom** classni ichida check_order funksiyasi bolishi kerak u buyurtma bor yoki yoligini tekshirb beradi va return qilb javob yuboradi.
