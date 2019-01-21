@@ -20,23 +20,12 @@ INSTALLED_APPS = [
 
 **python manage.py migrate**
 
-````
-PAYCOM_SETTINGS = {
-    "HOST":"https://checkout.test.paycom.uz/api",   #test host
-    "ID":"qwertt12345",          #token
-    "SECRET_KEY":"wertyu234567",  #password
-    "PATH_CLASS":"apps.order.views", #Paycom class
-    "ACCOUNTS":{
-        "KEY1":"order_id",
-        "KEY2":None #or "type"
-    }
-}
-
-````
 # ⚙️ To'lovlarni sozlash
 Tolovlarni amalga oshirish uchun sizda **Paycom** classi bolishi kerak u qanday yoziladi va nega kerak!
 **Paycom** classi buyurtma bor yoki yoligi yoki narxini tekwirib javob qaytarish uchun kerak!
 mana pasda qanday yozilishi xudi wunday yozilishi kerak **Paycom** classni ichida check_order funksiyasi bolishi kerak u buyurtma bor yoki yoligini tekshirb beradi va return qilb javob yuboradi.
+
+**apps.order.views.py** yoki **order.views.py**
 
 ````
 from PaycomUz.status import ORDER_FOUND,ORDER_NOT_FOUND,INVALID_AMOUNT
@@ -53,6 +42,20 @@ class Paycom:
         else:  #agar bunday buyurtma bolmasa
             return ORDER_NOT_FOUND #yoki INVALID_AMOUNT #narxi tori kelmadi
 ````
+````
+PAYCOM_SETTINGS = {
+    "HOST":"https://checkout.test.paycom.uz/api",   #test host
+    "ID":"qwertt12345",          #token
+    "SECRET_KEY":"wertyu234567",  #password
+    "PATH_CLASS":"apps.order.views", #Paycom classini qayerga yozgan bolsangiz owa joyni korsating
+    "ACCOUNTS":{
+        "KEY1":"order_id",
+        "KEY2":None #or "type"
+    }
+}
+
+````
+
 **urls.py**
 ````
 from django.contrib import admin
