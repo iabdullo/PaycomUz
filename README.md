@@ -42,6 +42,7 @@ class Paycom:
         else:  #agar bunday buyurtma bolmasa
             return ORDER_NOT_FOUND #yoki INVALID_AMOUNT #narxi tori kelmadi
 ````
+**settings.py**
 ````
 PAYCOM_SETTINGS = {
     "HOST":"https://checkout.test.paycom.uz/api",   #test host
